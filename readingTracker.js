@@ -57,7 +57,7 @@ function mostReadBook(log) {
 function printDailySummary(log) {
 // logs a quick daily comment of what was read on the date for how much time read
 // Loops the data to access the accurate amount of the date, minutes, and book in order to print it 
-// Making the array set for day - mintues - book allows the data to be printed in the same order over and over to its easy to read
+// Making the array set for day - mintues - book allows the data to be printed in the same order over and over so its easy to read
   for (let entry of log) {
     console.log(`${entry.day}: ${entry.minutes} mins reading "${entry.book}"`);
   }
