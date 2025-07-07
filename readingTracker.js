@@ -1,4 +1,9 @@
 // Weekly reading log
+
+//Improvement: The weekday names could be changed into dates so the readinglog
+// could obtain multiples weeks of data and it could make sorting or fltering
+// a little bit easier.
+
 const readingLog = [
   { day: "Monday", book: "Dune", minutes: 30 },
   { day: "Tuesday", book: "1984", minutes: 20 },
