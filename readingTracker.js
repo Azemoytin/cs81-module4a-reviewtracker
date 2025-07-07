@@ -6,7 +6,13 @@ const readingLog = [
   { day: "Thursday", book: "The Hobbit", minutes: 40 },
   { day: "Friday", book: "1984", minutes: 15 }
 ];
-
+/*
+This function adds a new reading session to the reading log. It creates
+ the week, book title, and the mintues read, then pushing them to the
+ readinglog array so it can input the data into the readinglog.
+ The function outputs the day of the week, book title, minutes, and
+ finally void to end the array.
+*/
 // Adds a new reading entry to the log
 function addReadBook(day, book, minutes) {
 // Makes a reading get pushed onto the reading log increasing the data
@@ -15,6 +21,11 @@ function addReadBook(day, book, minutes) {
   readingLog.push(newEntry);
 }
 
+/*
+Calculates the time spent reading for the entire week. It then loops over
+ the provided data and gathers the minutes from each entry participant. 
+ The function then returns the total number.
+*/
 // Returns total minutes spent reading all week
 function totalReadingMinutes(log) {
 // Loops through the log to add up everyone's minutes and return it as a total value for the week
@@ -26,7 +37,12 @@ function totalReadingMinutes(log) {
   }
   return total;
 }
-
+/*
+Functions main job is to find which book was read the most in the log. So first
+ the function counts how many times each book was read, then scans the data
+ for the highest book read.  It outputs the book that was most read
+ or null if there isn't a requently read book. 
+*/
 // Returns the book read most frequently
 function mostReadBook(log) {
 // Scans which book was read the most by obtaining the title of each book and what was read the most
@@ -52,7 +68,11 @@ function mostReadBook(log) {
   }
   return maxBook;
 }
-
+/*
+Prints a quick summary of every every reading session, making it easy to track
+ progress. It loops through each entry in the reading log and formats
+ the data. The function performs (console.log) so the output has no value.
+*/
 // Prints a summary of minutes read per day
 function printDailySummary(log) {
 // logs a quick daily comment of what was read on the date for how much time read
