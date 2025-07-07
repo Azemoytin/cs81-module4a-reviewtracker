@@ -94,3 +94,18 @@ addReadBook("Saturday", "Dune", 50);
 printDailySummary(readingLog);
 console.log("Total minutes read:", totalReadingMinutes(readingLog));
 console.log("Most read book:", mostReadBook(readingLog));
+
+// Test Case
+
+function recordName(name) {
+  personName = name;
+  console.log("Data submitted by: ${personName}");
+}
+
+Output: 
+addReadBook("Saturday", "Dune", 50);
+addReadBook("Sunday",   "The Hobbit", 60);
+printDailySummary(readingLog);
+console.log("Total minutes read:", totalReadingMinutes(readingLog));
+console.log("Most read book:", mostReadBook(readingLog));
+recordName("Andrew");
