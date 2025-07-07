@@ -1,5 +1,7 @@
 // Weekly reading log
 
+// https://github.com/Azemoytin/cs81-module4a-reviewtracker/tree/main
+
 /*
 Improvement could be that the weekday names could be changed into dates so
  the readinglog could obtain multiples weeks of data and it could make
